@@ -78,13 +78,7 @@ html {
   #shadow {
     top: -70px;
     transform: scale(3);
+    animation: none;
   }
-  @keyframes move {
-    from {
-      transform: scale(3) translateY(-2px);
-    }
-    to {
-      transform: scale(5) translateY(0);
-    }
-  }
+  
 }
