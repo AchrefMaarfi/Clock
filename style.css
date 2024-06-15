@@ -1,0 +1,55 @@
+body {
+  background-color: #060516;
+  font-family: "Monaco", monospace;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  height: 100%;
+}
+
+#clock {
+  font-size: 10rem;
+  color: rgb(217, 230, 242);
+  text-align: center;
+  margin-top: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+#date {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#shadow {
+  position: relative;
+  width: 3.5rem;
+  height: 3rem;
+  top: -100px;
+  box-shadow: 0 1px 4px rgba(99, 199, 219, 0.3);
+  text-align: center;
+  background-color: rgba(0, 255, 255, 0.15);
+  z-index: -1;
+  filter: blur(10px);
+  border-radius: 50%;
+  transform: scale(7);
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.1), 0 0 10px rgba(0, 255, 255, 0.1), 0 0 15px rgba(0, 255, 255, 0.1), 0 0 20px rgba(0, 255, 255, 0.1), 0 0 25px rgba(0, 255, 255, 0.1), 0 0 30px rgba(0, 255, 255, 0.1), 0 0 35px rgba(0, 255, 255, 0.1);
+  }
+  
+  to {
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.1), 0 0 15px rgba(77, 255, 255, 0.1), 0 0 20px rgba(77, 255, 255, 0.1), 0 0 25px rgba(77, 255, 255, 0.1), 0 0 30px rgba(77, 255, 255, 0.1), 0 0 35px rgba(77, 255, 255, 0.1), 0 0 40px rgba(77, 255, 255, 0.1), 0 0 45px rgba(77, 255, 255, 0.1);
+  }
+}
